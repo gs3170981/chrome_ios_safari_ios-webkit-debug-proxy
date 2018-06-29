@@ -14,6 +14,7 @@
 
 吓得我赶紧放了一张老婆镇楼
 ![镇楼](https://img-blog.csdn.net/20180627095637164?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01ja3lfTG92ZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 既然写了这篇文章，说明这类问题都已经解决了，那我们言归正传，讲讲我们要 **实现什么**？
 
 > chrome-devtools对IOS移动端的H5页面进行调试
@@ -99,6 +100,7 @@ iphone连接上PC后，会有“是否信任该计算机”的提示，都按确
 
 上面说到端口监听为9221，则打开chorme45输入http://127.0.0.1:9221/
 ![45-01](https://img-blog.csdn.net/20180629102853416?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01ja3lfTG92ZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 点击“逗逗”（也就是你的设备），你会发现里面是空白的，说明你还没有打开H5页面，用safari打开一个H5页面，刷新chrome，就会发现多了几条数据
 ![45-02](https://img-blog.csdn.net/20180629103435753?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01ja3lfTG92ZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 划重点，**你对你需要调试的页面，进行审查元素**，我这边举例调试“百度”
@@ -106,6 +108,7 @@ iphone连接上PC后，会有“是否信任该计算机”的提示，都按确
 将该地址复制到地址栏，则进入调试界面！
 ![45-04](https://img-blog.csdn.net/20180629103947544?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01ja3lfTG92ZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 ![iphone02](https://img-blog.csdn.net/2018062910401062?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01ja3lfTG92ZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 宁哥！宁哥！哦，走错片场了。
 控制台输入
 > alert('Hello World!')
@@ -121,6 +124,7 @@ iphone连接上PC后，会有“是否信任该计算机”的提示，都按确
 
 接下来，我们试试断点，点进我们刚才绑定的方法，进入chrome缓存中，进行断点调试
 ![45-06](https://img-blog.csdn.net/20180629105259306?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01ja3lfTG92ZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 点击“百度一下”，发现进不去！接下来就是黑科技 —— 
 
 ### 双击右上角箭头按钮
@@ -128,6 +132,7 @@ iphone连接上PC后，会有“是否信任该计算机”的提示，都按确
 ![45-08](https://img-blog.csdn.net/20180629105726512?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01ja3lfTG92ZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 再点击“百度一下”发现进来了！输入this，返回的就是当前btn dom元素
 ![45-09](https://img-blog.csdn.net/20180629105756166?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01ja3lfTG92ZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 在此鼓掌(*^▽ ^*)
 
 > 你说你怎么知道这儿有效的？......一口老血，一把辛酸泪
@@ -157,6 +162,7 @@ iphone连接上PC后，会有“是否信任该计算机”的提示，都按确
 
 **问题描述**：执行“ios_webkit_debug_proxy -f chrome-devtools://devtools/bundled/inspector.html”该语句时，如下展示
 ![cmd02](https://img-blog.csdn.net/2018062913595574?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01ja3lfTG92ZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 没有连接设备的响应，或返回error，warn等提示未有设备连接
 **解决方案**：查看iTunes是否连接上你的设备，重新插拔一下USB接口，重启服务乃至重启电脑进行尝试，如仍不行，请下载其他版本进行尝试
 
@@ -199,4 +205,5 @@ sf：https://segmentfault.com/u/mybestangel/articles
 
 鬼知道我尝试了多少个解决方案，下载了多少个chrome版本，那些无用的文章写出来，加上一堆的分享党占屏百度首页
 ![你的良心不会疼吗？](http://ww1.rs.fanjian.net/c/26/1b/33/f2265efc6f1b861eb533d906df2afe7e.jpg)
+
 也难怪说，谷歌是最好的搜索引擎，心酸。
